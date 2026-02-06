@@ -249,9 +249,9 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yuhang Yu</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Diwang Weng</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Diwang Weng</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jinwei Chen</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jinwei Chen</a>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Wei Dong</a>
                   </span>
@@ -406,7 +406,55 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Photorealistic color retouching plays a vital role in visual content creation, yet manual retouching remains inaccessible to non-experts due to its reliance on specialized expertise. Reference-based methods offer a promising alternative by transferring the preset color of a reference image to a source image. However, these approaches often operate as novice learners, performing global color mappings derived from pixel-level statistics, without a true understanding of semantic context or human aesthetics. To address this issue, we propose SemiNFT, a Diffusion Transformer (DiT)-based retouching framework that mirrors the trajectory of human artistic training: beginning with rigid imitation and evolving into intuitive creation. Specifically, SemiNFT is first taught with paired triplets to acquire basic structural preservation and color mapping skills, and then advanced to reinforcement learning (RL) on unpaired data to cultivate nuanced aesthetic perception. Crucially, during the RL stage, to prevent catastrophic forgetting of old skills, we design a hybrid online-offline reward mechanism that anchors aesthetic exploration with structural review. Extensive experiments show that SemiNFT not only outperforms state-of-the-art methods on standard preset transfer benchmarks but also demonstrates remarkable intelligence in zero-shot tasks, such as black-and-white photo colorization and cross-domain (anime-to-photo) preset transfer. These results confirm that SemiNFT transcends simple statistical matching and achieves a sophisticated level of aesthetic comprehension.
+            We design a curriculum-style training paradigm inspired by the learning process of a human retouching expert. The process starts with cold-start supervised fine-tuning on paired image triplets to capture fundamental structural relationships between the source image, the reference image, and the retouched image, and subsequently transitions to reinforcement learning on unpaired data to cultivate higher-level aesthetic perception. Additionally, to prevent the model from forgetting the structural preservation skills learned in the cold-start stage, we propose a hybrid online-offline reward mechanism to review old skills. 
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Approach -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            We design a curriculum-style training paradigm inspired by the learning process of a human retouching expert. The process starts with cold-start supervised fine-tuning on paired image triplets to capture fundamental structural relationships between the source image, the reference image, and the retouched image, and subsequently transitions to reinforcement learning on unpaired data to cultivate higher-level aesthetic perception. Additionally, to prevent the model from forgetting the structural preservation skills learned in the cold-start stage, we propose a hybrid online-offline reward mechanism to review old skills. 
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Approach -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Extented Scenarios</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Black-and-white Photo Colorization 
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Cross-Domain Preset Transfer 
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Text-guided Restoration for Old Photos
           </p>
         </div>
     </div>
